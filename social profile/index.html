@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Social APP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+
+    <section class="container mt-1 mt-lg-3 mt-xxl-5 sa-profile-page ">
+        <div class="row">
+            <div class="sa-profile col-lg-4 border-end border-info">
+
+                <figure class="text-center">
+                    <img class="img-thumbnail" src="images/avatar1.png" alt="Jane Doe avatar">
+                    <figcaption>
+                        <h2 class="text-primary">Jane Doe</h2>
+                        <h3>from Chisinau</h3>
+                    </figcaption>
+                </figure>
+
+                <!-- HW2: add friend list using list group component with avatars -->
+                
+                <ul class="list-group ">
+                    <li class="list-group-item bg-body-secondary">
+                        <div class="d-flex flex-row justify-content-between">
+                            <h5 >Contacts</h5>
+                            <div class="text-secondary ">
+                                <i class="fa-solid fa-video px-3"></i>
+                                <i class="fa-solid fa-magnifying-glass px-3"></i>
+                                <i class="fa-solid fa-ellipsis px-3"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item bg-body-secondary">
+                        <div class="d-flex align-items-center">
+                            <img class="img-thumbnail sa-thumb bg-body-secondary " src="images/avatar-1 (1).png " alt=""><span class="sa-online"></span>
+                            <h6 class="px-3"> Marry Popyns</h6>
+                        </div>
+                    </li>
+                    <li class="list-group-item bg-body-secondary">
+                        <div class="d-flex align-items-center">
+                            <img class="img-thumbnail sa-thumb bg-body-secondary " src="images/avatar-1 (2).png" alt=""><span class="sa-online"></span>
+                            <h6 class="px-3"> Antonio Banderas</h6>
+                        </div>
+
+                    </li>
+                    <li class="list-group-item bg-body-secondary">
+                        <div class="d-flex align-items-center">
+                            <img class="img-thumbnail sa-thumb bg-body-secondary " src="images/avatar-1 (3).png" alt=""><span class="sa-online"></span><span class="sa-online"></span>
+                            <h6 class="px-3"> Ali Baba</h6>
+                        </div>
+
+                    </li>
+                    <li class="list-group-item bg-body-secondary">
+                        <div class="d-flex align-items-center">
+                            <img class="img-thumbnail sa-thumb bg-body-secondary " src="images/avatar-1 (4).png" alt=""><span class="sa-online"></span>
+                            <h6 class="px-3"> Chris Murphy</h6>
+                        </div>
+                        <div class="sa-circle">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </div>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div class="sa-posts col-lg-8">
+
+                <article>
+                    <header class="mb-3 d-flex flex-column-reverse">
+                        <h1 class="text-primary">Lorem ipsum dolor sit amet.</h1>
+                        <img class="img-fluid " src="images/1032-900x400.jpg" alt=" picture">
+                    </header>
+
+                    <p class="sa-text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus tempore eligendi ullam ipsum fuga soluta non corporis placeat iste nam voluptates veritatis deleniti et odio dicta velit repellat pariatur quaerat totam rerum consectetur dolore, doloribus at? Dolorum impedit quibusdam cupiditate! Officiis eligendi modi asperiores iure delectus officia, ab necessitatibus corrupti vel, non enim ducimus fuga. Dolores numquam odit ea a magnam, labore, facere harum voluptatum id expedita minus ducimus non. Rerum minima totam quia numquam perspiciatis vero porro ipsa beatae similique repudiandae quidem fuga fugiat laboriosam illo sapiente, magni quaerat ipsam voluptates animi. Explicabo cum harum totam, maiores soluta quisquam.
+                    </p>
+                    <div id="article-continuation" class="collapse">
+                        <p class="sa-text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus tempore eligendi ullam ipsum fuga soluta non corporis placeat iste nam voluptates veritatis deleniti et odio dicta velit repellat pariatur quaerat totam rerum consectetur dolore, doloribus at? Dolorum impedit quibusdam cupiditate! Officiis eligendi modi asperiores iure delectus officia, ab necessitatibus corrupti vel, non enim ducimus fuga. Dolores numquam odit ea a magnam, labore, facere harum voluptatum id expedita minus ducimus non. Rerum minima totam quia numquam perspiciatis vero porro ipsa beatae similique repudiandae quidem fuga fugiat laboriosam illo sapiente, magni quaerat ipsam voluptates animi. Explicabo cum harum totam, maiores soluta quisquam.
+                        </p>
+                        <p class="sa-text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus tempore eligendi ullam ipsum fuga soluta non corporis placeat iste nam voluptates veritatis deleniti et odio dicta velit repellat pariatur quaerat totam rerum consectetur dolore, doloribus at? Dolorum impedit quibusdam cupiditate! Officiis eligendi modi asperiores iure delectus officia, ab necessitatibus corrupti vel, non enim ducimus fuga. Dolores numquam odit ea a magnam, labore, facere harum voluptatum id expedita minus ducimus non. Rerum minima totam quia numquam perspiciatis vero porro ipsa beatae similique repudiandae quidem fuga fugiat laboriosam illo sapiente, magni quaerat ipsam voluptates animi. Explicabo cum harum totam, maiores soluta quisquam.
+                        </p>
+                    </div>
+
+                    <footer class="text-end">
+                        <a class="btn btn-link" href="#article-continuation" data-bs-toggle="collapse">more<i class="bi bi-caret-right"></i></a>
+
+                        <div class="text-start dropdown sa-reaction">
+                                                                        <!-- acest atribut e pentru JS -->
+                            <a class="btn btn-link text-decoration-none" data-bs-toggle="dropdown" href="#"><i class="fa-solid fa-thumbs-up"></i>like
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="" class="dropdown-item text-warning"><i class="fa-solid fa-face-smile"></i></a>
+                                </li>
+                                <li>
+                                    <a href="" class="dropdown-item text-warning-emphasis"><i class="fa-solid fa-fire"></i></a>
+                                </li>
+                                <li>
+                                    <a href="" class="dropdown-item text-muted"><i class="fa-solid fa-poop"></i></a>
+                                </li>
+                                <li>
+                                    <a href="" class="dropdown-item text-danger"><i class="fa-solid fa-heart"></i></a>
+                                </li>
+                            </ul>
+
+                            <!-- color each icon with a specific color -->
+                        </div>
+                    </footer>
+                </article>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>

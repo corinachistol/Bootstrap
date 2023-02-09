@@ -37,12 +37,16 @@
     top:85px ;
 }
 
-
-@media only screen and (max-width:576px){
-    .sa-contacts{
-        display: none;
-    }
+.sa-contacts{
+    display: none;
 }
+
+@media (min-width: 576px) {
+     .sa-contacts{
+        display: block;
+    } 
+}
+
 
 @media only screen and (min-width:768px){
     .sa-online{
@@ -52,14 +56,14 @@
 }
 @media only screen and (min-width:992px){
     .sa-online{
-        left: 60px;
-        top: 59px;
+        left: 50px;
+        top: 48px;
     }
 }
-
-/* @include @media-breakpoint-up() {
-    .sa-onlline{
-
+@media only screen and (min-width:1200px){
+    .sa-online{
+        left: 59px;
+        top:60px;
     }
-} */
+}
 

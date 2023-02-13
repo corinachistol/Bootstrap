@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap 5 | Navbar</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+        <style>
+            /* method of style: overriding */
+            #tourCarousel .carousel-inner{
+                overflow: visible;
+            }
+            #tourCarousel .carousel-caption{
+                width: 100%;
+               right: auto;
+               left: auto;
+
+            }
+            #tourCarousel .de-carousel-caption-details{
+                color: black;
+                position: absolute;
+                width: 100%;
+                right: -100%;
+                left: auto;
+                bottom: 10%;
+            }
+
+            #tourCarousel .de-carousel-item{
+                width: 600px;
+                height: 500px;
+            }
+
+            #tourCarousel .de-carousel-item-img{
+                margin: 0 auto;
+                width: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header class="container">Some header stuff</header>
+        
+        <section class="container my-5">
+            <div class="row">
+                <div class="col">
+                    <!-- carousel -->
+                    <div id="tourCarousel" 
+                        class="carousel slide carousel-fade" 
+                        data-bs-ride="carousel">
+
+                        <!-- slides -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item de-carousel-item ">
+                                <img src="images/1056-500x500.jpg" class="d-block de-carousel-item-img" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2 class="text-secondary">Amazing PLACES!!!!</h2>
+                                    <div class="de-carousel-caption-details">
+                                        <h3>Subtitle for this offer!</h3>
+                                        <p>Some representative placeholder content for the first slide.</p>
+                                        <p>Some representative placeholder content for the first slide.</p>
+                                        <p>Some representative placeholder content for the first slide.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item active de-carousel-item">
+                                <img src="images/50-280x400.jpg" class="d-block de-carousel-item-img" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2 class="text-secondary">Amazing PLACES2!!!!</h2>
+                                    <div class="de-carousel-caption-details">
+                                        <h3>Subtitle for this offer2!</h3>
+                                        <p>Some representative placeholder content for the first slide.</p>
+                                        <p>Some representative placeholder content for the first slide.</p>
+                                        <p>Some representative placeholder content for the first slide.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                            <div class="carousel-item de-carousel-item">
+                               <img src="images/56-600x400.jpg" class="d-block de-carousel-item-img" alt="...">
+                           </div>
+                            
+                        </div>
+                        <!-- slides -->
+                    
+                        <!-- controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#tourCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#tourCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        <!-- controls -->
+
+                        <!-- indicators -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#tourCarousel" data-bs-slide-to="0"  aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#tourCarousel" data-bs-slide-to="1" class="active" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#tourCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <!-- indicators -->
+                        <!-- carousel -->
+                    </div>
+                    
+                    
+                    <!-- Hw1: fit the images to the carousel container -->
+                    
+                </div>
+                
+                <div class="col">right side</div>
+            </div>   
+        </section>
+
+        <footer class="container">Some header stuff</footer>
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </body>
+</html>
+
+
+<!-- HW3: slide 1- description,. slide 2 - price table,  slide 3 -form to reserve
+    
+    HW4:custom indicators - change vertically, circle, number ,icon active
+    HW5:adaptivew
+  -->

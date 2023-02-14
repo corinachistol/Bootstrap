@@ -4,17 +4,25 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bootstrap 5 | Navbar</title>
+        <title>Bootstrap 5 | Carousel</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <style>
+            body{
+                background-color: #234;
+            }
             /* method of style: overriding */
+
+            #tourCarousel{
+                margin: auto;
+            }
             #tourCarousel .carousel-inner{
                 overflow: visible;
             }
             #tourCarousel .carousel-caption{
-                width: 100%;
+               width: 100%;
                right: auto;
                left: auto;
 
@@ -25,18 +33,41 @@
                 width: 100%;
                 right: -100%;
                 left: auto;
-                bottom: 10%;
+                bottom: 100%;
             }
 
             #tourCarousel .de-carousel-item{
-                width: 600px;
-                height: 500px;
+                width: 41vw;
+                height: 47vh;
             }
 
             #tourCarousel .de-carousel-item-img{
                 margin: 0 auto;
                 width: auto;
+                
             }
+
+            #tourCarousel .de-carousel-indicators{
+                position: absolute; 
+                display: block;
+                left: 82%;
+                bottom: 56%;
+
+          
+            }
+
+            #tourCarousel .de-carousel-indicators button {
+                width: 40px;
+                height: 40px;
+                border: 1px solid black;
+                color: #234;
+                border-radius: 100%;
+                margin-right: 0;
+                margin-left: 0;
+                text-indent: 0;
+                
+            }
+
         </style>
     </head>
 
@@ -49,7 +80,8 @@
                     <!-- carousel -->
                     <div id="tourCarousel" 
                         class="carousel slide carousel-fade" 
-                        data-bs-ride="carousel">
+                        data-bs-ride="false"
+                    >
 
                         <!-- slides -->
                         <div class="carousel-inner">
@@ -58,7 +90,7 @@
                                 <div class="carousel-caption d-none d-md-block">
                                     <h2 class="text-secondary">Amazing PLACES!!!!</h2>
                                     <div class="de-carousel-caption-details">
-                                        <h3>Subtitle for this offer!</h3>
+                                        <h3>Detailed description for this offer!</h3>
                                         <p>Some representative placeholder content for the first slide.</p>
                                         <p>Some representative placeholder content for the first slide.</p>
                                         <p>Some representative placeholder content for the first slide.</p>
@@ -69,12 +101,56 @@
                             <div class="carousel-item active de-carousel-item">
                                 <img src="images/50-280x400.jpg" class="d-block de-carousel-item-img" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h2 class="text-secondary">Amazing PLACES2!!!!</h2>
+                                    <h2 class="text-secondary">Price table!!!</h2>
                                     <div class="de-carousel-caption-details">
-                                        <h3>Subtitle for this offer2!</h3>
-                                        <p>Some representative placeholder content for the first slide.</p>
-                                        <p>Some representative placeholder content for the first slide.</p>
-                                        <p>Some representative placeholder content for the first slide.</p>
+                                        <div class="container text-center text-secondary">
+                                            <div class="row">
+                                              <div class="col fw-bold">
+                                                Standart Room
+                                              </div>
+                                              <div class="col fw-bold">
+                                                Confort Room
+                                              </div>
+                                              <div class="col fw-bold">
+                                                Deluxe Room
+                                              </div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="col">
+                                                <ul>
+                                                    <li>King-side bed or two beds</li>
+                                                    <li>Basic Facilities included</li>
+                                                    <li>No Breakfast included</li>
+                                                </ul>
+                                              </div>
+                                              <div class="col">
+                                                <ul>
+                                                    <li>Semi-double beds</li>
+                                                    <li>Stunning view</li>
+                                                    <li>Equiped with luxury items</li>
+                                                </ul>
+                                              </div>
+                                              <div class="col">
+                                                <ul>
+                                                    <li>Double king-side bed</li>
+                                                    <li>Exquisite decorations </li>
+                                                    <li>Advanced furnishing</li>
+                                                    <li>Breakfast and dinner included</li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col fw-bold">
+                                                 50<i class="bi bi-currency-euro"></i>
+                                                </div>
+                                                <div class="col fw-bold">
+                                                  100<i class="bi bi-currency-euro"></i>
+                                                </div>
+                                                <div class="col fw-bold">
+                                                  150<i class="bi bi-currency-euro"></i>
+                                                </div>
+                                              </div>
+                                          </div>
                                     </div>
                                 </div>
 
@@ -82,6 +158,12 @@
                             
                             <div class="carousel-item de-carousel-item">
                                <img src="images/56-600x400.jpg" class="d-block de-carousel-item-img" alt="...">
+                               <div class="carousel-caption d-none d-md-block">
+                                <h2 class="text-secondary">Go for it!!!</h2>
+                                <div class="de-carousel-caption-details">
+                                    <a class=" btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal-form-tour">Fill in the form <i class="bi bi-info-circle-fill"></i></a>
+                                </div>
+                            </div>
                            </div>
                             
                         </div>
@@ -99,10 +181,10 @@
                         <!-- controls -->
 
                         <!-- indicators -->
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#tourCarousel" data-bs-slide-to="0"  aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#tourCarousel" data-bs-slide-to="1" class="active" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#tourCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <div class="carousel-indicators de-carousel-indicators">
+                            <button type="button" data-bs-target="#tourCarousel" data-bs-slide-to="0"  aria-current="true" aria-label="Slide 1">1</button>
+                            <button type="button" data-bs-target="#tourCarousel" data-bs-slide-to="1" class="active" aria-label="Slide 2">2</button>
+                            <button type="button" data-bs-target="#tourCarousel" data-bs-slide-to="2" aria-label="Slide 3">3</button>
                         </div>
                         <!-- indicators -->
                         <!-- carousel -->
@@ -120,6 +202,79 @@
         <footer class="container">Some header stuff</footer>
 
 
+        <div class="modal fade" id="modal-form-tour" >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Last details</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                  
+                    <form>
+
+                        <label for="rooms" class="form-label"></label>
+                        <div class="mb-2 input-group">
+                            <span class="input-group-text">
+                                <i class="fa-solid fa-bed"></i>
+                            </span>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Choose the type of room</option>
+                                <option value="1">Standart </option>
+                                <option value="2">Confort</option>
+                                <option value="3">Deluxe</option>
+                            </select>
+                        </div>
+                        
+                        
+                        <label for="departure-date" class="form-label">Choose the departure date</label>
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </span>
+                           <input type="date" class="form-control mb-2"> 
+                        </div>
+
+                        
+                        <label for="nights">How many nights</label>
+                        <select class="form-select mb-2" aria-label="Default select example">
+                            <option selected value="1">7 </option>
+                            <option value="2">10</option>
+                        </select>
+
+                        
+                        <label>Families with children</label>
+                        <div class="input-group">
+                            <div class="form-check">
+                                <input type="radio" name="children" class="form-check-input mx-1" id="yes" required>
+                                <label for="yes" class="form-check-label">Yes</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="children" class="form-check-input mx-1" id="no" required>
+                                <label for="no" class="form-check-label">No</label>
+                            </div>
+                        </div> 
+                
+                            
+                        
+                        <div class="form-floating my-2">
+                            <textarea class="form-control" id="" style="height:100px"></textarea>
+                            <label for="query">Other preferences...</label>
+                        </div>
+                        
+                    </form>
+
+                </div>
+
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+
 
 
 
@@ -131,5 +286,5 @@
 <!-- HW3: slide 1- description,. slide 2 - price table,  slide 3 -form to reserve
     
     HW4:custom indicators - change vertically, circle, number ,icon active
-    HW5:adaptivew
+    HW5:adaptive
   -->
